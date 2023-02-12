@@ -32,7 +32,6 @@ def update_measurement(measure_pk, new_measure):
 def delete_measurement(measure_pk):
     measurement = Measurement.objects.get(pk=measure_pk)
     measurement.delete()
-    return measurement
 
 
 def delete_measurements():
